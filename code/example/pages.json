@@ -1,0 +1,84 @@
+{
+	"easycom": {
+		"autoscan": true,
+		"custom":{
+			"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+		}
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		}
+	    ,{
+            "path" : "pages/login/login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	// "subPackages":[
+	// 	{
+	// 		"root":"分包地址",
+	// 		"pages":[
+	// 			{
+	// 				"path":"root下的页面地址",
+	// 				"style" :
+	// 				{
+	// 				    "navigationBarTitleText": "",
+	// 				    "enablePullDownRefresh": false
+	// 				}
+	// 			}
+	// 		]
+	// 	}
+	// ],
+	// "preloadRule": {
+	// 	"pagesA/list/list": {
+	// 		"network": "all",
+	// 		"packages": ["__APP__"]
+	// 	},
+	// 	"pagesB/detail/detail": {
+	// 		"network": "all",
+	// 		"packages": ["pagesA"]
+	// 	}
+	// },
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#ff5500",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/logo.png",
+				"selectedIconPath": "static/logo.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/login/login",
+				"iconPath": "static/logo.png",
+				"selectedIconPath": "static/logo.png",
+				"text": "登录"
+			}
+		]
+		// "midButton": {
+		// 	"width": "150rpx",
+		// 	"height": "150rpx",
+		// 	"text": "xxxx",
+		// 	"iconPath": "/static/logo.png",
+		// 	"iconWidth": "116rpx"
+		// 	//tabbar的list长度必须对称，比如2，4,图片一般找圆的
+		// }
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}

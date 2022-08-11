@@ -1,0 +1,7 @@
+{
+  "name": "snippet_query",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

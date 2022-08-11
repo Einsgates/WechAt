@@ -1,0 +1,18 @@
+# this file is the text file for the UML diagram
+
+# entity set
+
+User(User_id: int, User_name: string, Password: string, Email: string, Chatbot_flag: boolean, Status: string) PRIMIARY KEY (User_id);
+Session(Session_id: int, Chat_Name: string) PRIMIARY KEY (Session_id);
+Msg(Msg_id: int, Session_id: int, Session_pri_id: int, Session_content: string, Session_time: string, Msg_status: string, Msg_sender: string) PRIMIARY KEY (Msg_id);
+Post(Post_id: int, Post_content: string, Post_time: string, Post_sender: string) PRIMARY KEY (Post_id);
+Snippet(Snippet_id: int, Snippet_content: string, Snippet_link: string) PRIMARY KEY (Snippet_id);
+
+# relationship set
+
+Member(User_id: int, Session_id: int, Time_begin: string, Time_end: string) PRIMARY KEY (User_id, Session_id);
+Admin(User_id: int, Session_id: int, Time_begin: string, Time_end: string) PRIMARY KEY (User_id, Session_id);
+Friendship(Session_pri_id: int, User_id1: int, User_id2: int, Pending_flag: boolean, Blacklist_flag: boolean) PRIMARY KEY (Session_pri_id);
+Post_blacklist(Post_id: int, User_id: int) PRIMARY KEY (Post_id, User_id);
+Post_likelist(Post_id: int, User_id: int, Like_amount: int) PRIMARY KEY (Post_id, User_id);
+Append_post(Post_id: int, Snippet_id: int) PRIMARY KEY (Post_id, Snippet_id);

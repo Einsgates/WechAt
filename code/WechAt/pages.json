@@ -1,0 +1,123 @@
+// Only Jack can modift the tabbar
+{
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#ff5500",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			// index page
+			{
+				"pagePath": "pages/Chat_session/chat",
+				"iconPath": "static/logo.png",
+				"selectedIconPath": "static/logo.png",
+				"text": "Sessions"
+			},
+			// post square page
+			{
+				"pagePath": "pages/post/post",
+				"iconPath": "static/logo.png",
+				"selectedIconPath": "static/logo.png",
+				"text": "Posts"
+			},
+			// product square page
+			{
+				"pagePath": "pages/product/product",
+				"iconPath": "static/logo.png",
+				"selectedIconPath": "static/logo.png",
+				"text": "Products"
+			}, 
+			// account page
+			{
+				"pagePath": "pages/account/account",
+				"iconPath": "static/logo.png",
+				"selectedIconPath": "static/logo.png",
+				"text": "Account"
+			},
+			{
+				"pagePath": "pages/bottle/bottle",
+				"iconPath": "static/logo.png",
+				"selectedIconPath": "static/logo.png",
+				"text": "Bottle"
+			}
+		]
+	},
+	// every time after you add a page to the project, add it to here as well
+	"pages": [ //pages数组中第一项表示应用启动页
+		{
+			"path": "pages/Login/Login",
+			"style": {
+				"navigationBarTitleText": "Login"
+			}
+		},
+		{
+			"path": "pages/Register/Register",
+			"style": {
+				"navigationBarTitleText": "Login"
+			}
+		},
+		{
+		    "path" : "pages/Chat_session/chat",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "WeChat"
+		    }
+		},
+		{
+			"path": "pages/post/post",
+			"style": {
+				"navigationBarTitleText": "Post Square"
+			}
+		},
+		{
+			"path": "pages/message/message",
+			"style": {
+				"navigationBarTitleText": "Your Message"
+			}
+		},
+		{
+			"path": "pages/product/product",
+			"style": {
+				"navigationBarTitleText": "Products Square"
+			}
+		},
+		{
+			"path": "pages/account/account",
+			"style": {
+				"navigationBarTitleText": "Your Account"
+			}
+		},
+		{
+			"path": "pages/bottle/bottle",
+			"style": {
+				"navigationBarTitleText": "Drift Bottle"
+			}
+		},
+		{
+			"path": "pages/product/create",
+			"style": {
+				"navigationBarTitleText": "Create Product"
+			}
+		},
+		{
+			"path": "pages/account/changePassword",
+			"style": {
+				"navigationBarTitleText": "Change Password"
+			}
+		}
+        ,{
+            "path" : "pages/delete/delete",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "Delete Account"
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
